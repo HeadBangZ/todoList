@@ -79,7 +79,9 @@ document.getElementById("new-btn").addEventListener('click', function() {
 
 // Create <li></li> to the todo list
 function listTodoItem(textInput) {
-
+    if (dataArray === null) {
+        dataArray = [];
+    }
     var dataObj = {
         listItem: textInput,
     };
