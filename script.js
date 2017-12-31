@@ -1,6 +1,5 @@
 /*   
   TODO REQUIRE:
-        Remove items from ToDoList  -   Remove the correct item
         Why can't handle if empty
         Make the code more Clean - Remove repeating code
  */
