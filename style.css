@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: royalblue;
+}
+
+body {
+    width: 50%;
+    margin: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 15px 10px 15px 40px;
+    text-align: left;
+    transition: 0.2s;
+    font-size: 20px;
+    color: #f5f5f5;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+li:nth-child(even) {
+    background: #555;
+}
+
+li:nth-child(odd) {
+    background: #777;
+}
+
+#todo-header-box,
+#todo-body-box {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#todo-body-box {
+    border: 2px solid #f5f5f5;
+}
+
+#todo-header-box {
+    border-right: 2px solid #f5f5f5;
+    border-left: 2px solid #f5f5f5;
+    border-top: 2px solid #f5f5f5;
+    padding: 10px;
+    background: #2d2d2d;
+    margin-top: 100px;
+}
+
+#my-input {
+    padding: 5px;
+    width: 80%;
+    font-size: 20px;
+    border: 2px solid #f5f5f5;
+}
+
+#new-btn {
+    background: #00a86b;
+    padding: 6px 20px;
+    color: #f5f5f5;
+    font-size: 23px;
+    position: relative;
+    right: 4px;
+    border: 1px solid #f5f5f5;
+    cursor: pointer;
+}
+
+#new-btn:hover {
+    background: rgba(0, 168, 107, 0.7);
+}
+
+h2 {
+    font-size: 30px;
+    color: #f5f5f5;
+    text-decoration: underline;
+    text-align: center;
+}
+
+li:hover {
+    background: #bbb;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    background: #000;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 25px;
+}
+
+.closeBtn:hover {
+    background: #00a86b;
+    background: indianred;
+}
