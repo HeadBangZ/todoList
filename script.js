@@ -21,28 +21,16 @@ function getTodoItems(dataObj) {
             return function() {
                 var div = this.parentElement;
                 div.style.display = "none";
-                var position = dataArray.indexOf(item); // Fix denne her linje
-                dataArray.splice(position, 1); // Fix denne her linje
+                var position = dataArray.indexOf(item);
+                dataArray.splice(position, 1);
                 localStorage.setItem("itemListRecord", JSON.stringify(dataArray));
                 console.log(dataArray);
             }
         })(dataArray[i]);
-        // close[i].onclick = function() {
-        //     var div = this.parentElement;
-        //     div.style.display = "none";
-        //     var position = dataArray.findIndex(function(e) {
-        //         return dataObj === e.dataObj;
-        //     });
-        //     dataArray.splice(position, 1);
-        //     // var position = dataArray.splice(dataArray.indexOf('c'), 1); // Fix denne her linje            
-        //     localStorage.setItem("itemListRecord", JSON.stringify(dataArray));
-        //     console.log(dataArray);
-        // }
         var list = document.getElementsByTagName('li');
         list[i].onclick = function() {
             this.classList.toggle("checked");
         }
-
     }
 }
 var keyAdd = false;
