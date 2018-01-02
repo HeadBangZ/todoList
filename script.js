@@ -34,9 +34,7 @@ function getTodoItems(dataObj) {
 }
 var keyAdd = false;
 // Data Object
-var dataArray = [];
-
-dataArray = JSON.parse(localStorage.getItem("itemListRecord"));
+var dataArray = JSON.parse(localStorage.getItem("itemListRecord")) || new Array();
 
 // Add Close Button to <li></li> element
 var listItems = document.getElementsByTagName('li');
